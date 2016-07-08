@@ -20,10 +20,15 @@ rm -R /var/log/odoo
 
 #Remove databases
 sudo service postgresql stop
+
 apt-get remove postgresql -y
+
 apt-get --purge remove postgresql\* -y
+
 rm -r -f /etc/postgresql/
+
 rm -r -f /etc/postgresql-common/
+
 rm -r -f /var/lib/postgresql/
 
 #Delete users and groups
