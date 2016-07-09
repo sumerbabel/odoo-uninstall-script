@@ -13,6 +13,7 @@
 
 ## Stop service 
 sudo service odoo-server stop
+sudo pkill -u odoo
 
 # Remove config file(s)
 sudo rm -f /etc/odoo-server.conf
