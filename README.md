@@ -64,3 +64,9 @@ cp pg_hba.conf-backup pg_hba.conf
 restart the server, in order to run with the safe pg_hba.conf
 
 sudo /etc/init.d/postgresql restart
+
+
+sudo wget https://raw.githubusercontent.com/sumerbabel/odoo-uninstall-script/master/odoo_uninstall.sh
+sudo chmod +x odoo_uninstall.sh
+
+sudo ./odoo_uninstall.sh
