@@ -70,3 +70,11 @@ sudo wget https://raw.githubusercontent.com/sumerbabel/odoo-uninstall-script/mas
 sudo chmod +x odoo_uninstall.sh
 
 sudo ./odoo_uninstall.sh
+
+
+rm /etc/systemd/system/odoo
+rm /etc/systemd/system/odoo
+rm /usr/lib/systemd/system/odoo 
+rm /usr/lib/systemd/system/odoo
+systemctl daemon-reload
+systemctl reset-failed
