@@ -43,3 +43,11 @@ sudo groupdel postgres
 sudo userdel -r odoo
 sudo groupdel odoo
 
+
+#addd paul
+rm /etc/systemd/system/odoo
+rm /etc/systemd/system/odoo
+rm /usr/lib/systemd/system/odoo 
+rm /usr/lib/systemd/system/odoo
+systemctl daemon-reload
+systemctl reset-failed
